@@ -37,6 +37,7 @@ apt-get -y install build-essential linux-headers-$(uname -r)
 
 #install nginx
 apt-get install -y nginx
+sudo su update-rc.d -f nginx defaults
 
 # The netboot installs the VirtualBox support (old) so we have to remove it
 service virtualbox-ose-guest-utils stop
